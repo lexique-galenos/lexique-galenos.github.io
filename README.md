@@ -62,13 +62,9 @@ Ce projet est mis à disposition à des fins éducatives et professionnelles.
 
 Pour toute question ou suggestion concernant ce lexique, n'hésitez pas à ouvrir une *issue* sur ce dépôt GitHub.
 
----
-
 ## 🌐 Accès à la ressource
 
 Le lexique est accessible en ligne à l'adresse suivante :  
 👉 https://lexique-galenos.github.io/
-
----
 
 **© 2026 Lexique pharmaceutique Galenos**
