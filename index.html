@@ -3,7 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Lexique pharmaceutique - Termes essentiels</title>
+  <title>Lexique pharmaceutique Galenos</title>
+  
+  <!-- Métadonnées SEO pour le référencement Google -->
+  <meta name="description" content="Lexique pharmaceutique Galenos - Dictionnaire complet des termes médicaux, pharmaceutiques et de santé. Définitions, exemples et sources scientifiques pour professionnels et étudiants." />
+  <meta name="keywords" content="lexique pharmaceutique, dictionnaire médical, termes pharmaceutiques, glossaire médical, terminologie médicale, vocabulaire pharmacie, définitions médicales, lexique santé, Galenos, pharmacologie, médicaments, dispositifs médicaux, essais cliniques, pharmacovigilance, AMM, DCI, excipient, princeps, générique, biodisponibilité, posologie, pharmacocinétique, pharmacodynamie" />
+  <meta name="author" content="Lexique Galenos" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Lexique pharmaceutique Galenos" />
+  <meta property="og:description" content="Dictionnaire complet des termes médicaux et pharmaceutiques avec définitions, exemples et sources scientifiques." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://lexique-galenos.github.io/" />
+  
   <style>
     /* ========================================
        VARIABLES CSS - Palette de couleurs
@@ -28,6 +39,8 @@
        ======================================== */
     header{margin-bottom:32px; display:flex; flex-direction:column; gap:16px;}
     .badge{background:rgba(50,166,172,0.2);padding:8px 16px;border-radius:999px;color:var(--secondaire);font-weight:600;border:1px solid rgba(50,166,172,0.3);display:inline-block;}
+    .btn-link{background:rgba(248,193,55,0.2);padding:8px 16px;border-radius:999px;color:var(--accent);font-weight:600;border:1px solid rgba(248,193,55,0.3);display:inline-block;text-decoration:none;transition:all 0.3s ease;}
+    .btn-link:hover{background:rgba(248,193,55,0.3);transform:translateY(-2px);box-shadow:0 4px 12px rgba(248,193,55,0.25);}
     h1{margin:0;font-size:2rem;background:linear-gradient(135deg, var(--secondaire), var(--principal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
     p.lead{margin:12px 0 0;color:var(--neutre-clair);font-size:1.05rem;line-height:1.6;}
     
@@ -150,6 +163,8 @@
     }
     body.light .lead { color: #1e2a2a; }
     body.light button { background: #f8c137; color: #1e2a2a; }
+    body.light .btn-link { background: rgba(248,193,55,0.25); color: #d18f00; border:1px solid rgba(248,193,55,0.4); }
+    body.light .btn-link:hover { background: rgba(248,193,55,0.35); }
     body.light .card { 
       background: #ffffff; 
       border:1px solid rgba(0,122,132,0.25); 
@@ -183,8 +198,11 @@
 <body class="light">
   <div class="wrap">
     <header>
-      <div style="display:flex; gap:12px; align-items:center;">
-        <div class="badge">⚕️ Lexique pharmaceutique</div>
+      <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; justify-content:space-between;">
+        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <div class="badge">⚕️ Lexique Galenos</div>
+          <a href="https://github.com/lexique-galenos/lexique-galenos.github.io" target="_blank" rel="noopener noreferrer" class="btn-link">📖 Présentation du projet</a>
+        </div>
         <button id="theme-toggle">🌙 Thème sombre</button>
       </div>
       <h1>💊 Termes essentiels du domaine pharmaceutique</h1>
