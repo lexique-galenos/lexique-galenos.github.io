@@ -42,8 +42,8 @@ Le lexique est accessible via une interface web interactive permettant :
 
 - HTML5
 - CSS3 (design moderne avec thèmes personnalisables)
-- JavaScript vanilla
-- Interface responsive adaptée à tous les appareils
+- JavaScript
+- Interface adaptée à tous les appareils
 
 ## 📘 Structure du projet
 
@@ -51,18 +51,8 @@ Le lexique est accessible via une interface web interactive permettant :
 Lexique-Galenos/
 ├── index.html          # Page principale du lexique
 ├── termes.js           # Base de données des termes pharmaceutiques
-├── README.md           # Documentation du projet
-└── assets/             # Ressources additionnelles (si applicable)
+└── README.md           # Documentation du projet
 ```
-
-## 🎨 Fonctionnalités
-
-- ✅ Recherche en temps réel
-- ✅ Affichage des sources bibliographiques
-- ✅ Notes supplémentaires contextuelles
-- ✅ Interface bilingue (emojis et icônes universels)
-- ✅ Thème clair et sombre
-- ✅ Design responsive
 
 ## 📄 Licence
 
