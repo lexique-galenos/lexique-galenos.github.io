@@ -224,7 +224,7 @@
 
     <footer style="margin-top: 60px; padding-top: 24px; border-top: 2px solid rgba(50,166,172,0.3); text-align: center;">
       <p id="revision-date" style="color: rgba(246,248,244,0.7); font-size: 0.9rem; margin: 0;">
-        Lexique révisé le : <span id="last-modified">Chargement...</span>
+        Lexique révisé le <span id="last-modified">Chargement...</span>
       </p>
     </footer>
   </div>
@@ -355,7 +355,11 @@
         
         if (data && data.length > 0) {
           const lastCommitDate = new Date(data[0].commit.committer.date);
-          const formattedDate = lastCommitDate.toISOString().split('T')[0]; // Format YYYY-MM-DD
+          
+          // Formatage de la date en français : "10 février 2026"
+          const options = { day: 'numeric', month: 'long', year: 'numeric' };
+          const formattedDate = lastCommitDate.toLocaleDateString('fr-FR', options);
+          
           document.getElementById('last-modified').textContent = formattedDate;
         } else {
           document.getElementById('last-modified').textContent = 'Date indisponible';
