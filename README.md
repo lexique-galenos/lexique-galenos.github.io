@@ -67,5 +67,5 @@ Pour toute question ou suggestion concernant ce lexique, n'hésitez pas à ouvri
 Le lexique est accessible en ligne à l'adresse suivante :  
 👉 https://lexique-galenos.github.io/
 
-
+##
 **© 2026 Lexique pharmaceutique Galenos**
