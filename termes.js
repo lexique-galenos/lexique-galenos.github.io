@@ -1,5 +1,5 @@
 // Données du lexique pharmaceutique
-// Généré depuis: Lexique officiel_2026-01-15.xlsx
+// Généré depuis le fichier Lexique officiel_2026-01-15.xlsx
 // Format: [Terme, Définition, Source, Autres termes, Notes]
 
 const LEX = [
