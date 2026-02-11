@@ -1,8 +1,4 @@
-# 💊 Lexique-Galenos
-
-> Ressources linguistiques pour la maîtrise du français en pharmacie
-
-## 📋 Description
+# 💊 Lexique pharmaceutique Galenos
 
 **Galenos** est un ensemble de ressources conçues pour soutenir la maîtrise du français dans le domaine pharmaceutique. Ce projet offre aux professionnels de la santé et aux étudiants en pharmacie des outils linguistiques pour une communication précise et professionnelle.
 
