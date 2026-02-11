@@ -2,6 +2,9 @@
 
 **Galenos** est un ensemble de ressources conçues pour soutenir la maîtrise du français dans le domaine pharmaceutique. Ce projet offre aux professionnels de la santé et aux étudiants en pharmacie des outils linguistiques pour une communication précise et professionnelle.
 
+Le lexique est accessible en ligne à l'adresse suivante : 
+👉 https://lexique-galenos.github.io/
+
 ### Contenu du projet
 
 - 🔤 **Lexique pharmaceutique** : Définitions et contextes d'usage des termes techniques
