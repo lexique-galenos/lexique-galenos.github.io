@@ -51,11 +51,29 @@
        CONTRÔLES ET FORMULAIRES
        ======================================== */
     .controls{display:flex;gap:12px;margin:24px 0;flex-wrap:wrap}
+    
+    /* Conteneur pour l'input de recherche avec l'emoji */
+    .search-wrapper {
+      position: relative;
+      flex: 1;
+      min-width: 280px;
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      pointer-events: none;
+      z-index: 1;
+    }
+    
     input[type="search"], select, button{
       padding:12px 16px;border-radius:10px;border:1px solid rgba(50,166,172,0.25);
       background:rgba(50,166,172,0.1);color:var(--neutre-clair);outline:none;font-size:1rem;
     }
-    input[type="search"]{flex:1;min-width:280px;background:rgba(50,166,172,0.15);}
+    input[type="search"]{width: 100%; padding-left: 44px; background:rgba(50,166,172,0.15);}
     input[type="search"]::placeholder{color:rgba(246,248,244,0.5);}
     select{background:rgba(50,166,172,0.15);color:var(--neutre-clair);cursor:pointer;}
     select option{background:var(--neutre-fonce);color:var(--neutre-clair);}
@@ -156,6 +174,9 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+    body.light .search-icon {
+      color: rgba(30,42,42,0.6);
+    }
     body.light input[type="search"], body.light select {
       background: #ffffff;
       color: #1e2a2a;
@@ -196,7 +217,7 @@
     @media (max-width:768px){
       h1{font-size:1.5rem;}
       .controls{flex-direction:column;}
-      input[type="search"]{min-width:100%;}
+      .search-wrapper{min-width:100%;}
     }
   </style>
 </head>
@@ -214,7 +235,10 @@
     </header>
 
     <div class="controls">
-      <input id="search" type="search" placeholder="🔎 Rechercher un terme, une définition ou un usage..." />
+      <div class="search-wrapper">
+        <span class="search-icon">🔎</span>
+        <input id="search" type="search" placeholder="Rechercher un terme, une définition ou un usage..." />
+      </div>
       <button id="reset">🔄 Réinitialiser</button>
     </div>
 
@@ -341,7 +365,7 @@
     const themeBtn = document.getElementById('theme-toggle');
     themeBtn.addEventListener('click', ()=>{
       document.body.classList.toggle('light');
-      themeBtn.textContent = document.body.classList.contains('light') ? '🌙 Thème sombre' : '🌞 Changer de thème';
+      themeBtn.textContent = document.body.classList.contains('light') ? '🌙 Thème sombre' : '🌞 Thème clair';
     });
 
     /* ========================================
